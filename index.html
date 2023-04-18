@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarea8 bootstrap </title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="container-fluid bg-danger-subtle d-flex justify-content-center ">
+        <p class="text-danger mb-0 p-2 fs-6">Contactanos al 0800-5505000</p>
+    </header>
+
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <span class=" text-danger fs-5 fw-bold ">Makeup KC </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-Salon">Salon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-contacto">Contacto</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="email">
+                    <input class="form-control me-2" type="email" placeholder="correo electronico" aria-label="email">
+                    <button class="btn btn-danger btn-danger-outline-success" type="button">Suscribete</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--slide de imagenes-->
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="img/img.3.png" class="d-block w-100" alt="MAkeupKC">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/imag.1.jpg" class="d-block w-100" alt="maquillaje">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="">
+                <img src="img/salon.2.jpg" class="d-block w-100" alt="Salon">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!--INTRO-->
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1 class="p-3 fs-2 border-top border-3"> Un espacio único donde resaltamos tu belleza <br> <span
+                class="text-danger">Salon de Maquillaje</span></h1>
+        <p class="p-3 fs-4"><span class="text-danger">MakeupKC</span> Maquillistas profesionales que crean increibles
+            looks para cualquier
+            tipo de eventos: Bodas, Moda, Publicidad, Books, Sociales. </p>
+    </section>
+
+    <!--SERVICIOS-->
+    <section id="servicios" class="container-fluid">
+        <div class="row w-75 mx-auto my-5 servicio-fila">
+            <div class="col-lg-6 col-md-12 cols-sm-12 d-flex  my-5 icono-wrap" >
+        
+                <img src="img/maquillajenovia.jpg" alt="maquillajenovia" width="160" height="180">
+                <div>
+                    <h3 class=" text-danger fs-5 mt-4 px-4 pb1"> Maquillaje de Novias </h3>
+                    <p class="px-4">Sabemos que es un momento único.<br> Maquillaje a prueba de agua y
+                        emociones!<br>Productos aptos para HD (high definition).</p>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 cols-sm-12 d-flex  my-5 icono-wrap">
+                <img src="img/moda.jpg" alt="maquillamoda" width="160" height="180">
+                <div>
+                    <h3 class=" text-danger fs-5 mt-4 px-4 pb1"> Maquillaje para Moda y Publicidad </h3>
+                    <p class="px-4"> Make up para campañas gráficas, editorial, desfiles, <br> catálogos de belleza,
+                        videoclips,
+                        lookbooks..</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 cols-sm-12 d-flex  my-5 icono-wrap">
+                <img src="img/books.jpg" alt="maquillajebooks" width="180" height="180">
+                <div>
+                    <h3 class="text-danger fs-5 mt-4 px-4 pb1"> Maquillaje para Books </h3>
+                    <p class="px-4"> Asesoramiento integral maquillaje, peinado e imagen.<br> El mejor equipo de moda
+                        para realizar tu
+                        book!.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 cols-sm-12 d-flex  my-5 icono-wrap">
+                <img src="img/cejaspestañas.jpg" alt="cejaspestañas" width="160" height="180">
+                <div>
+                    <h3 class=" text-danger fs-5 mt-4 px-4 pb1"> Cejas y Pestañas </h3>
+                    <p class="px-4"> Diseño de cejas.<br> Extenciones de Pestañas..!</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Salon -->
+    <section id="section-Salon">
+
+        <div class="w-75 m-auto text-center" id="equipo">
+            <h2 class="mb-5 fs-2 border-top border-3"> Equipo de Profesionales <br> <span class="text-danger"> Expertos
+                    en Belleza </span></h2>
+            <p class="fs-4"> Nuestro objetivo es realzar tu belleza y reflejarla con cada look que creemos</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="img-fluid" src="img/equipo.jpg" alt="maquillistas">
+        </div>
+        <br>
+        <div class=" " id="local">
+            <div class="mapa">
+                <img class=" img-fluid rounded float-left " src="img/mapa.jpg" alt="mapa">
+            </div>
+            <div>
+                <div class="wrapper "></div>
+                <h2 class="text-danger mb-4 mt-0 "> Nuestro local </h2>
+                <p class=" fs-5 "> Estamos ubicados en la Ciudad de Buenos Aires Argenita <br> Av. Corrientes 5940 Villa
+                    Crespo </p>
+                <h2 class="text-danger m-b-4"> Horarios</h2>
+                <p class="fs-5"> Lun- Dom 10:00 hrs - 21 hrs </p>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!---FORMULARIO -->
+
+    <section id="seccion-contacto"class="Contacto-section">
+
+            <div class="container" id="contenedor-formulario">
+                <div id="titulo-formulario" class="  text-center mb-4">
+                    <div>
+                        <img src="img/contacto.2.png" width="160" height="180" alt="contacto" class="img-fluid">
+                    </div>
+                    <h2>Contacto</h2>
+                    <p class="fs-5"> Estamos aqui para resaltar tu belleza</p>
+
+                </div>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre" placeholder="escribe aqui tu nombre"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                        <input type="Tel" class="form-control" id="TL" placeholder="000-000-000" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Escribe aqui tu mensaje"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-danger w-100 fs-5">Enviar Mensaje</button>
+                    </div>
+
+                </form>
+
+            </div>
+    
+    </section>
+
+    <!------Footer-->
+
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+
+        <p class="fs-5 pt-3 px-3"> Makeup KC &copy; todos los derechos reservados</p>
+        <div id="iconos">
+            <a href="https://es-la.facebook.com/"><i class="bi bi-facebook "></i> </a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram "></i></a>
+    
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
